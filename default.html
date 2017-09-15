@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>default</title>
+    <style>
+        header {
+            background: white;
+            padding: 1px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Challenge Title</h1>
+            <p>Challenge explanation</p>   
+            <ul>
+                <li><a href="#">Roman Numerals</a></li>
+                <li><a href="#">helpful links</a></li>
+                <li><a href="#">helpful links</a></li>
+                <li><a href="#">helpful links</a></li>
+            </ul>
+        </header>
+    <script src="simple-test-lib.js"></script>
+    <script>
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        tests({
+            'test example one: it should force fail': function() {
+                fail();
+            },
+            'test example two: it should pass': function() {
+                var testingSum = sum(10, 10);
+                eq(testingSum, 20);
+            }
+        });
+    </script>
+</body>
+</html>
